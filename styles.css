@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    font-family: 'Courier Prime', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.container {
+    margin: 0 50px;
+}
+
+.navbar {
+    font-size: 16pt;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-item a {
+    font-size: 18px;
+    padding: 0 20px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    color:white;
+  }
+
+  .navbar-item a:hover {
+    color: #1CCBB1;
+  }
+  
+  .navbar-item a:before, .navbar-item a:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0px;
+    height: 1.5pt;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.4s;
+    background-color: #1CCBB1;
+    opacity: 0;
+  }
+  .navbar-item a::before {
+    left: calc(35%);
+  }
+ .navbar-item a::after {
+    right: calc(35%);
+  }
+  li:hover a::before, li:hover a::after {
+    width: 50%;
+    opacity: 1;
+  }
+  
